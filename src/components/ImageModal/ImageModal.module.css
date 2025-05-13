@@ -1,0 +1,130 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  background-color: white;
+  border-radius: 4px;
+  overflow: auto;
+  outline: none;
+}
+
+.modalContentWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.imageInfo {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+}
+
+.authorAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.closeButton {
+  padding: 8px 16px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #303f9f;
+}
+
+.imageInfo {
+  padding: 15px 0;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.authorAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.imageStats {
+  margin: 10px 0;
+}
+
+.description {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.closeButton {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #303f9f;
+}
+
+@media (min-width: 768px) {
+  .modalContent {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .modalImage {
+    max-width: 60%;
+    margin-right: 20px;
+  }
+
+  .imageInfo {
+    flex: 1;
+    padding: 0 0 0 20px;
+  }
+}

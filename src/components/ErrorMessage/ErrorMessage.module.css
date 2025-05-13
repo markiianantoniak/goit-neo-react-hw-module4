@@ -1,0 +1,10 @@
+.errorContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #e53935;
+  font-size: 18px;
+  font-weight: 500;
+}
